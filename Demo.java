@@ -31,7 +31,7 @@ public class Demo {
 		Random random = new Random();
 		for (int r = 0; r<rows; r++) {
 			for (int c = 0; c<cols; c++) {
-				output[r][c] = random.nextInt(maxValue);
+				output[r][c] = random.nextInt(maxValue+1);
 			}
 		}
 		return output;
@@ -42,9 +42,9 @@ public class Demo {
 		Random random = new Random();
 		int[][] output = new int[rows][];
 		for (int r = 0; r <rows; r++) {
-			output[r] = new int[random.nextInt(cols)];
+			output[r] = new int[random.nextInt(cols+1)];
 			for (int c = 0; c < output[r].length; c++) {
-				output[r][c] = random.nextInt(maxValue);
+				output[r][c] = random.nextInt(maxValue+1);
 			}
 		}
 		return output;
